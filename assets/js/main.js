@@ -25,7 +25,7 @@ function jugarCachipun(veces) {
                 } else {
                     alert("perdiste");
                 }
-            } else if (jusuario === "tijera") {
+            } else if (usuario === "tijera") {
                 if (computador === "papel") {
                     alert("ganaste");
                 } else {
@@ -35,12 +35,14 @@ function jugarCachipun(veces) {
                 return "Por favor elige piedra, papel o tijera";
             }
         }
+      
         if (ganador === "Usuario") {
             victoriasusuario++;
         } else if (ganador === "computador") {
             victoriascomputador++;
         }
     }
+
     if (victoriasusuario > victoriascomputador) {
         document.write("Has ganado !!hurra!!");
     } else if (victoriasusuario < victoriascomputador) {
@@ -48,5 +50,6 @@ function jugarCachipun(veces) {
     } else {
         document.write("¡¡Empataron!!");
     }
+
 }
 
